@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Destacadas - Día de la Afrocolombianidad</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        .card-producto {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card-producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-producto img,
+        .card-producto video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #fff;
+        }
+
+        .card-body {
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-text {
+    font-size: 0.95rem;
+    color: #444;
+    flex-grow: 1;
+    min-height: 6em; /* Fuerza altura mínima */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Número de líneas visibles */
+    -webkit-box-orient: vertical;
+}
+
+
+        .precio {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d32f2f;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #1b73d7;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img src="../img/escudo colegio.png" alt="Logo" width="50" height="50"
+                    class="d-inline-block align-text-top rounded-circle">
+                Institución Educativa Técnica Francisco de Paula Santander
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" aria-current="page" href="../html/historia.html">Historia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" aria-current="page" href="../html/producto.html">Platos tipicos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Este 21 de Mayo Disfruta de la Gastronomia Afrocolombiana</h1>
+            <div class="container text-center my-4">
+                <p class="lead text-muted" style="max-width: 800px; margin: 0 auto;">
+                    En el mes de la afrocolombianidad en Colombia, queremos resaltar la importancia de esta cultura, en esta ocasión vamos a destacar la importancia de la gastronomía que ha hecho parte de la cocina nacional…
+Al igual que la riqueza y variedad de su cultura, la gastronomía afrocolombiana es muy especial y cuenta con un buen despliegue de sabores y variedades para todos los gustos.  Regiones como la costa atlántica y pacifica se caracterizan por tener lo mejor de la gastronomía producto de la herencia africana que se estableció en sus pueblos desde la época de la conquista.
+Entre los platos típicos afrocolombianos podemos encontrar:
+
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card card-producto">
+                        <img src="../img/ARROZ CON COCO.png" class="card-img-top" alt="Plato 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Arroz con coco, Pescado, Patacones y ensalada</h5>
+                            <p class="card-text">
+                                Plato tipico de las zonas del caribe colombiano. Este plato es una mezcla de arroz, pescado frito, patacones (plátano verde frito) y ensalada fresca. El arroz se cocina con leche de coco, lo que le da un sabor único y delicioso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card card-producto">
+                        <img src="../img/ARROZ DE CAMARONES.jpg" class="card-img-top" alt="Plato 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Arroz con camarones</h5>
+                            <p>
+                                Plato típico de la región del caribe colombiano. Este plato es una mezcla de arroz, camarones frescos y especias locales. El arroz se cocina con leche de coco, lo que le da un sabor único y delicioso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card card-producto">
+                        <img src="../img/BOLLO DE YUCA.avif" alt="Mazamorra">
+                        <div class="card-body">
+                            <h5 class="card-title">Bollo de yuca</h5>
+                            <p class="card-text">
+                                El bollo de yuca es un plato típico de la región del caribe colombiano. Este plato es una mezcla de yuca, queso y especias locales. Se cocina al vapor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card card-producto">
+                        <img src="../img/BOLLO DE MAZORCA.webp" class="card-img-top" alt="Dulces">
+                        <div class="card-body">
+                            <h5 class="card-title">Bollo de mazorca con queso</h5>
+                            <p class="card-text">
+                                El bollo de mazorca con queso es un plato típico de la región del caribe colombiano. Este plato es una mezcla de maíz, queso y especias locales. Se cocina al vapor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><br>
+        <hr><br>
+        <center><h2>Postres Afrocolombianos "Cocadas"</h2></center>
+        <div class="container text-center my-4">
+            <p class="lead text-muted" style="max-width: 800px; margin: 0 auto;">
+                Las cocadas colombianas son uno de los dulces típicos de las regiones del Caribe. Su historia se remonta a la época colonial, cuando los esclavos africanos comenzaron a mezclar el coco con otros ingredientes locales para crear un dulce delicioso. Con el tiempo, las cocadas se han convertido en un símbolo de la cultura afrocolombiana y son muy populares en todo el país. Se pueden encontrar en diferentes regiones de Colombia, cada una con su propia receta y variaciones.
+            </p>
+        </div>
+        
+
+        <div class="container mt-5">
+            <div class="row justify-content-center g-4">
+        
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card card-producto">
+                        <img src="../img/COCADAS.gif" class="card-img-top" alt="Cocadas">
+                        <div class="card-body">
+                            <h5 class="card-title">Cocadas</h5>
+                            <p>
+                                Dulce típico de la región del Caribe colombiano. Este dulce es una mezcla de coco, azúcar y especias locales. Se puede encontrar en diferentes regiones de Colombia, cada una con su propia receta y variaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card card-producto">
+                        <img src="../img/ALEGRIAS.jpeg" class="card-img-top" alt="Alegría">
+                        <div class="card-body">
+                            <h5 class="card-title">Alegría</h5>
+                            <p class="card-text">
+                                Dulce típico del Caribe, aporte de nuestros ancestros africanos y conservado por las mujeres del Palenque de San Basilio, Bolívar. Lleva millo, panela, coco y anís en grano.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card card-producto">
+                        <img src="../img/enyucados.jpg" class="card-img-top" alt="Enyucados">
+                        <div class="card-body">
+                            <h5 class="card-title">Enyucados</h5>
+                            <p class="card-text">
+                                Postre típico afrocolombiano, popular en las regiones Caribe y Pacífica. Hecho con yuca rallada, coco y panela, representa la fusión de ingredientes autóctonos con tradiciones africanas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+        
+
+                <footer style="background-color: #1b73d7;" class="text-light mt-5 pt-3 pb-2">
+                    <div class="container text-center">
+                        <div class="row border-bottom">
+                            <div class="col-md-4 mb-3">
+                                <h4>🏫 Institución Educativa Técnica Francisco de Paula Santander</h4>
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <h5>Dirección</h5>
+                                <ul class="list-unstyled">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.85876194719387!2d-74.88641058738365!3d10.907339025021317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5d46fdf3ccaf5%3A0x1087349bbfcd7658!2sInstituci%C3%B3n%20Educativa%20T%C3%A9cnico%20Francisco%20de%20Paula%20Santander!5e0!3m2!1ses-419!2sco!4v1745881142173!5m2!1ses-419!2sco" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </ul>
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <h5>Síguenos</h5>
+                                <a target="_blank" href="https://www.facebook.com/colegionuevohorizonte">
+                                    <img src="../img/facebook.png" alt="Facebook" width="30">
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/colegionuevohorizonte">
+                                    <img src="../img/instagram (1).png" alt="Instagram" width="30">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="mb-0">© 2025 Institución Educativa Técnica Francisco de Paula Santander. Todos los derechos reservados.</p>
+                    </div>
+                </footer>
+
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
